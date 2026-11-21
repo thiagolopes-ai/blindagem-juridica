@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>ponte</title><body>enviando...<script>
+const N=['post-1-auditor-de-citacoes','post-2-advogado-do-diabo','post-3-escudo-anti-injection','story-1-a-ia-inventou','story-2-tres-skills','story-3-como-funciona','story-4-link-na-bio','capa-destaque-ia-advogados'];
+(async()=>{for(const n of N){const b=await (await fetch(n+'.jpg')).blob();window.opener&&window.opener.postMessage({ponte:1,name:n+'.jpg',blob:b},'*');}
+document.body.textContent=window.opener?'ok':'sem opener';})();
+</script>
